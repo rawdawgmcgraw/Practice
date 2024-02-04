@@ -1,243 +1,247 @@
-print('Welcome to the quiz! Please make sure all spelling is correct!')
+def main():
+    print('Welcome to the quiz! Please make sure all spelling is correct!')
+    
+    playing = input('\nWould you like to play? ')
+    score = 0
+    
+    if playing.lower() != 'yes':
+        quit()
+    
+    name = input('Great! What is your name? ')
+    
+    print('\nWhat difficulty level would you like to try?\n\n1. Easy\n2. Medium\n3. Hard\n')
+    difficulty = input('\nPlease enter a number between 1-3: ')
+    
+    
+    if difficulty == '1':
+        print('\nOk ' + name + ', here are some easy questions.')
+    
+        answer = input('\nWhat kind of dog is Scooby-Doo? ')
+        if answer.lower() == 'great dane':
+            print('\nCorrect!')
+            score += 1
+        else:
+            print('\nIncorrect!')
+    
+        answer = input('\nOriginally, Amazon only sold what kind of product? ')
+        if answer.lower() == 'books':
+            print('\nCorrect!')
+            score += 1
+        else:
+            print('\nIncorrect!')
+    
+        answer = input('\nWho painted the Mona Lisa? ')
+        if answer.lower() == 'leonardo da vinci' or 'da vinci':
+            print('\nCorrect!')
+            score += 1
+        else:
+            print('\nIncorrect!')
+    
+        answer = input('\nWhat was the coffee shop named in the hit TV show Friends? ')
+        if answer.lower() == 'central perk':
+            print('\nCorrect!')
+            score += 1
+        else:
+            print('\nIncorrect!')
+    
+        answer = input('\nWhat is the fear of spiders called? ')
+        if answer.lower() == 'arachnophobia':
+            print('\nCorrect!')
+            score += 1
+        else:
+            print('\nIncorrect!')
+    
+        answer = input('\nWhat is the oldest soft drink in America? ')
+        if answer.lower() == 'dr. pepper' or 'dr pepper':
+            print('\nCorrect!')
+            score += 1
+        else:
+            print('\nIncorrect!')
+    
+        answer = input('\nIn 1929 what ingredient was removed from Coca-Cola? ')
+        if answer.lower() == 'cocaine':
+            print('\nCorrect!')
+            score += 1
+        else:
+            print('\nIncorrect!')
+    
+        answer = input('\nA person who studies fossils and prehistoric life, such as dinosaurs, is known as what? ')
+        if answer.lower() == 'paleontologist':
+            print('\nCorrect!')
+            score += 1
+        else:
+            print('\nIncorrect!')
+    
+        answer = input('\nWhere did the Olympic Games originate? ')
+        if answer.lower() == 'greece':
+            print('\nCorrect!')
+            score += 1
+        else:
+            print('\nIncorrect!')
+    
+        answer = input('\nWhat is the only continent without an active volcano? ')
+        if answer.lower() == 'australia':
+            print('\nCorrect!')
+            score += 1
+        else:
+            print('\nIncorrect!')
+    
+        print(f'\nYou got {score} out of 10 correct!')
+        print('\nFinal score: ' + str(score/10*100) + '%\n')
+        main()
+    
+    elif difficulty == '2':
+        print('\nOk ' + name + ', here are some medium level questions.')
+    
+        answer = input('\nThe unicorn is the national animal of which country? ')
+        if answer.lower() == 'scotland':
+            print('\nCorrect!')
+            score += 1
+        else:
+            print('\nIncorrect!')
+    
+        answer = input('\nIn a quest to replace rubber, James Wright accidentally invented what common toy? ')
+        if answer.lower() == 'silly putty':
+            print('\nCorrect!')
+            score += 1
+        else:
+            print('\nIncorrect!')
+    
+        answer = input('\nWhat would you be studying if you saw arches, whorls and loops? ')
+        if answer.lower() == 'fingerprints' or 'finger prints':
+            print('\nCorrect!')
+            score += 1
+        else:
+            print('\nIncorrect!')
+    
+        answer = input('\nWhat is the colloquial name for someone from New Zealand? ')
+        if answer.lower() == 'kiwi':
+            print('\nCorrect!')
+            score += 1
+        else:
+            print('\nIncorrect!')
+    
+        answer = input('\nWhich branch of the U.S. armed forces used the slogan “It’s not just a job, it’s an adventure”? ')
+        if answer.lower() == 'the navy' or 'navy':
+            print('\nCorrect!')
+            score += 1
+        else:
+            print('\nIncorrect!')
+    
+        answer = input('\nWhat candy was originally known as "chicken feed"? ')
+        if answer.lower() == 'candy corn':
+            print('\nCorrect!')
+            score += 1
+        else:
+            print('\nIncorrect!')
+    
+        answer = input('\n"Holiday" was the first Billboard Hot 100 single for what singer? ')
+        if answer.lower() == 'madonna':
+            print('\nCorrect!')
+            score += 1
+        else:
+            print('\nIncorrect!')
+    
+        answer = input('\nWhich book about a band of rabbits became a bestseller in 1972? ')
+        if answer.lower() == 'watership down' or 'water ship down':
+            print('\nCorrect!')
+            score += 1
+        else:
+            print('\nIncorrect!')
+    
+        answer = input('\nWhat is the name of the first permanent English settlement in North America? ')
+        if answer.lower() == 'jamestown':
+            print('\nCorrect!')
+            score += 1
+        else:
+            print('\nIncorrect!')
+    
+        answer = input('\nWho was the first president to visit all 50 states? ')
+        if answer.lower() == 'nixon' or 'richard nixon':
+            print('\nCorrect!')
+            score += 1
+        else:
+            print('\nIncorrect!')
+    
+        print(f'\nYou got {score} out of 10 correct!')
+        print('\nFinal score: ' + str(score / 10 * 100) + '%\n')
+        main()
+    
+    elif difficulty == '3':
+    
+        answer = input('\nWho was the youngest U.S. president? ')
+        if answer.lower() == 'theodore roosevelt' or 'teddy roosevelt':
+            print('\nCorrect!')
+            score += 1
+        else:
+            print('\nIncorrect!')
+    
+        answer = input('\nHow many elements are currently on the periodic table? ')
+        if answer == '118':
+            print('\nCorrect!')
+            score += 1
+        else:
+            print('\nIncorrect!')
+    
+        answer = input('\nWho was the first woman ever inducted into the Rock and Roll Hall of Fame? ')
+        if answer.lower() == 'aretha franklin' or 'aretha':
+            print('\nCorrect!')
+            score += 1
+        else:
+            print('\nIncorrect!')
+    
+        answer = input('\nWhat is the name of Boba Fett’s ship in “Star Wars”? ')
+        if answer.lower() == 'slave 1' or 'slave one':
+            print('\nCorrect!')
+            score += 1
+        else:
+            print('\nIncorrect!')
+    
+        answer = input('\nWhat is Starbucks logo? ')
+        if answer.lower() == 'siren' or 'a siren':
+            print('\nCorrect!')
+            score += 1
+        else:
+            print('\nIncorrect!')
+    
+        answer = input('\nWhat does Yahoo stand for? ')
+        if answer.lower() == 'yet another hierarchically officious oracle':
+            print('\nCorrect!')
+            score += 1
+        else:
+            print('\nIncorrect!')
+    
+        answer = input('\nWhat president was a licensed bartender? ')
+        if answer.lower() == 'abraham lincoln' or 'lincoln':
+            print('\nCorrect!')
+            score += 1
+        else:
+            print('\nIncorrect!')
+    
+        answer = input('\nWhich mystery writer holds the Guinness World Record for the most translated works? ')
+        if answer.lower() == 'agatha christie':
+            print('\nCorrect!')
+            score += 1
+        else:
+            print('\nIncorrect!')
+    
+        answer = input('\nName either of the two U.S. states that makes it illegal to get married on a dare. ')
+        if answer.lower() == 'delaware' or 'colorado':
+            print('\nCorrect!')
+            score += 1
+        else:
+            print('\nIncorrect!')
+    
+        answer = input('\nAccording to the U.S. Census Bureau, which state has the shortest one-way commute to work? ')
+        if answer.lower() == 'south dakota' or 'sd':
+            print('\nCorrect!')
+            score += 1
+        else:
+            print('\nIncorrect!')
+    
+        print(f'\nYou got {score} out of 10 correct!')
+        print('\nFinal score: ' + str(score / 10 * 100) + '%\n')
+        main()
 
-playing = input('Would you like to play? ')
-score = 0
 
-if playing.lower() != 'yes':
-    quit()
-
-name = input('Great! What is your name? ')
-
-print('\nWhat difficulty level would you like to try?\n\n1. Easy\n2. Medium\n3. Hard\n')
-difficulty = input('\nPlease enter a number between 1-3: ')
-
-
-if difficulty == '1':
-    print('\nOk ' + name + ', here are some easy questions.')
-
-    answer = input('\nWhat kind of dog is Scooby-Doo? ')
-    if answer.lower() == 'great dane':
-        print('\nCorrect!')
-        score += 1
-    else:
-        print('\nIncorrect!')
-
-    answer = input('\nOriginally, Amazon only sold what kind of product? ')
-    if answer.lower() == 'books':
-        print('\nCorrect!')
-        score += 1
-    else:
-        print('\nIncorrect!')
-
-    answer = input('\nWho painted the Mona Lisa? ')
-    if answer.lower() == 'leonardo da vinci' or 'da vinci':
-        print('\nCorrect!')
-        score += 1
-    else:
-        print('\nIncorrect!')
-
-    answer = input('\nWhat was the coffee shop named in the hit TV show Friends? ')
-    if answer.lower() == 'central perk':
-        print('\nCorrect!')
-        score += 1
-    else:
-        print('\nIncorrect!')
-
-    answer = input('\nWhat is the fear of spiders called? ')
-    if answer.lower() == 'arachnophobia':
-        print('\nCorrect!')
-        score += 1
-    else:
-        print('\nIncorrect!')
-
-    answer = input('\nWhat is the oldest soft drink in America? ')
-    if answer.lower() == 'dr. pepper' or 'dr pepper':
-        print('\nCorrect!')
-        score += 1
-    else:
-        print('\nIncorrect!')
-
-    answer = input('\nIn 1929 what ingredient was removed from Coca-Cola? ')
-    if answer.lower() == 'cocaine':
-        print('\nCorrect!')
-        score += 1
-    else:
-        print('\nIncorrect!')
-
-    answer = input('\nA person who studies fossils and prehistoric life, such as dinosaurs, is known as what? ')
-    if answer.lower() == 'paleontologist':
-        print('\nCorrect!')
-        score += 1
-    else:
-        print('\nIncorrect!')
-
-    answer = input('\nWhere did the Olympic Games originate? ')
-    if answer.lower() == 'greece':
-        print('\nCorrect!')
-        score += 1
-    else:
-        print('\nIncorrect!')
-
-    answer = input('\nWhat is the only continent without an active volcano? ')
-    if answer.lower() == 'australia':
-        print('\nCorrect!')
-        score += 1
-    else:
-        print('\nIncorrect!')
-
-    print(f'\nYou got {score} out of 10 correct!')
-    print('\nFinal score: ' + str(score/10*100) + '%')
-    quit()
-
-elif difficulty == '2':
-    print('\nOk ' + name + ', here are some medium level questions.')
-
-    answer = input('\nThe unicorn is the national animal of which country? ')
-    if answer.lower() == 'scotland':
-        print('\nCorrect!')
-        score += 1
-    else:
-        print('\nIncorrect!')
-
-    answer = input('\nIn a quest to replace rubber, James Wright accidentally invented what common toy? ')
-    if answer.lower() == 'silly putty':
-        print('\nCorrect!')
-        score += 1
-    else:
-        print('\nIncorrect!')
-
-    answer = input('\nWhat would you be studying if you saw arches, whorls and loops? ')
-    if answer.lower() == 'fingerprints' or 'finger prints':
-        print('\nCorrect!')
-        score += 1
-    else:
-        print('\nIncorrect!')
-
-    answer = input('\nWhat is the colloquial name for someone from New Zealand? ')
-    if answer.lower() == 'kiwi':
-        print('\nCorrect!')
-        score += 1
-    else:
-        print('\nIncorrect!')
-
-    answer = input('\nWhich branch of the U.S. armed forces used the slogan “It’s not just a job, it’s an adventure”? ')
-    if answer.lower() == 'the navy' or 'navy':
-        print('\nCorrect!')
-        score += 1
-    else:
-        print('\nIncorrect!')
-
-    answer = input('\nWhat candy was originally known as "chicken feed"? ')
-    if answer.lower() == 'candy corn':
-        print('\nCorrect!')
-        score += 1
-    else:
-        print('\nIncorrect!')
-
-    answer = input('\n"Holiday" was the first Billboard Hot 100 single for what singer? ')
-    if answer.lower() == 'madonna':
-        print('\nCorrect!')
-        score += 1
-    else:
-        print('\nIncorrect!')
-
-    answer = input('\nWhich book about a band of rabbits became a bestseller in 1972? ')
-    if answer.lower() == 'watership down' or 'water ship down':
-        print('\nCorrect!')
-        score += 1
-    else:
-        print('\nIncorrect!')
-
-    answer = input('\nWhat is the name of the first permanent English settlement in North America? ')
-    if answer.lower() == 'jamestown':
-        print('\nCorrect!')
-        score += 1
-    else:
-        print('\nIncorrect!')
-
-    answer = input('\nWho was the first president to visit all 50 states? ')
-    if answer.lower() == 'nixon' or 'richard nixon':
-        print('\nCorrect!')
-        score += 1
-    else:
-        print('\nIncorrect!')
-
-    print(f'\nYou got {score} out of 10 correct!')
-    print('\nFinal score: ' + str(score / 10 * 100) + '%')
-    quit()
-
-elif difficulty == '3':
-
-    answer = input('\nWho was the youngest U.S. president? ')
-    if answer.lower() == 'theodore roosevelt' or 'teddy roosevelt':
-        print('\nCorrect!')
-        score += 1
-    else:
-        print('\nIncorrect!')
-
-    answer = input('\nHow many elements are currently on the periodic table? ')
-    if answer == '118':
-        print('\nCorrect!')
-        score += 1
-    else:
-        print('\nIncorrect!')
-
-    answer = input('\nWho was the first woman ever inducted into the Rock and Roll Hall of Fame? ')
-    if answer.lower() == 'aretha franklin' or 'aretha':
-        print('\nCorrect!')
-        score += 1
-    else:
-        print('\nIncorrect!')
-
-    answer = input('\nWhat is the name of Boba Fett’s ship in “Star Wars”? ')
-    if answer.lower() == 'slave 1' or 'slave one':
-        print('\nCorrect!')
-        score += 1
-    else:
-        print('\nIncorrect!')
-
-    answer = input('\nWhat is Starbucks logo? ')
-    if answer.lower() == 'siren' or 'a siren':
-        print('\nCorrect!')
-        score += 1
-    else:
-        print('\nIncorrect!')
-
-    answer = input('\nWhat does Yahoo stand for? ')
-    if answer.lower() == 'yet another hierarchically officious oracle':
-        print('\nCorrect!')
-        score += 1
-    else:
-        print('\nIncorrect!')
-
-    answer = input('\nWhat president was a licensed bartender? ')
-    if answer.lower() == 'abraham lincoln' or 'lincoln':
-        print('\nCorrect!')
-        score += 1
-    else:
-        print('\nIncorrect!')
-
-    answer = input('\nWhich mystery writer holds the Guinness World Record for the most translated works? ')
-    if answer.lower() == 'agatha christie':
-        print('\nCorrect!')
-        score += 1
-    else:
-        print('\nIncorrect!')
-
-    answer = input('\nName either of the two U.S. states that makes it illegal to get married on a dare. ')
-    if answer.lower() == 'delaware' or 'colorado':
-        print('\nCorrect!')
-        score += 1
-    else:
-        print('\nIncorrect!')
-
-    answer = input('\nAccording to the U.S. Census Bureau, which state has the shortest one-way commute to work? ')
-    if answer.lower() == 'south dakota' or 'sd':
-        print('\nCorrect!')
-        score += 1
-    else:
-        print('\nIncorrect!')
-
-    print(f'\nYou got {score} out of 10 correct!')
-    print('\nFinal score: ' + str(score / 10 * 100) + '%')
-    quit()
+main()
